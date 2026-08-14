@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zubeen Garg Radio</title>
 
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#080808;
+  color:white;
+  text-align:center;
+}
+
+.radio{
+  max-width:700px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h1{
+  font-size:34px;
+}
+
+.live{
+  color:red;
+  font-weight:bold;
+  font-size:20px;
+  margin:20px;
+}
+
+.player{
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  height:0;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.player iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  border:0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="radio">
+
+<h1>🎵 Zubeen Garg Radio</h1>
+
+<div class="live">🔴 LIVE RADIO</div>
+
+<div class="player">
+<iframe
+src="https://www.youtube.com/embed/videoseries?list=PLfGOIvl9F0pw&loop=1"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+</body>
+</html>
