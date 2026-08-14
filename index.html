@@ -94,9 +94,26 @@ body{
   font-size:13px;
   opacity:.65;
 }
+.listeners{
+  display:block;
+  margin-top:8px;
+  font-size:14px;
+  letter-spacing:1px;
+  opacity:.9;
+}
+.watermark{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  font-size:14px;
+  color:white;
+  opacity:.45;
+  z-index:9999;
+  pointer-events:none;
+}
 </style>
 </head>
-
+  
 <body>
 
 <div class="radio">
@@ -105,7 +122,10 @@ body{
 
   <div class="subtitle">ASSAMESE MUSIC • 24/7 RADIO</div>
 
-  <div class="live">🔴 LIVE RADIO</div>
+  <div class="live">
+  🔴 LIVE RADIO
+  <span class="listeners">👥 127 LISTENING NOW</span>
+</div>
 
   <div class="card">
 
@@ -125,7 +145,7 @@ body{
   <div class="footer">
     © Zubeen Garg Radio
   </div>
-
+<div class="watermark">@iSHAN</div>
 </div>
 
 </body>
