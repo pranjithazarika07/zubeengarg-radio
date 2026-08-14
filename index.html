@@ -5,29 +5,69 @@
 <title>Zubeen Garg Radio</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
+  min-height:100vh;
   font-family:Arial,sans-serif;
-  background:#080808;
   color:white;
   text-align:center;
+
+  background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.82)),
+    url("zubeen.jpg") center center/cover fixed no-repeat;
 }
 
 .radio{
-  max-width:700px;
-  margin:auto;
-  padding:40px 20px;
+  min-height:100vh;
+  padding:55px 18px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
-h1{
-  font-size:34px;
+.logo{
+  font-size:42px;
+  margin-bottom:8px;
+  text-shadow:0 3px 15px #000;
+}
+
+.subtitle{
+  font-size:16px;
+  letter-spacing:3px;
+  opacity:.8;
+  margin-bottom:28px;
 }
 
 .live{
-  color:red;
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:30px;
+  background:rgba(180,0,0,.85);
+  font-size:19px;
   font-weight:bold;
-  font-size:20px;
-  margin:20px;
+  margin-bottom:25px;
+  box-shadow:0 5px 25px rgba(255,0,0,.3);
+}
+
+.card{
+  width:100%;
+  max-width:720px;
+  padding:22px;
+  border-radius:25px;
+  background:rgba(0,0,0,.62);
+  backdrop-filter:blur(8px);
+  box-shadow:0 10px 40px rgba(0,0,0,.6);
+}
+
+.now{
+  font-size:22px;
+  margin-bottom:18px;
+  font-weight:bold;
 }
 
 .player{
@@ -36,7 +76,8 @@ h1{
   padding-bottom:56.25%;
   height:0;
   overflow:hidden;
-  border-radius:15px;
+  border-radius:18px;
+  background:#111;
 }
 
 .player iframe{
@@ -47,6 +88,12 @@ h1{
   top:0;
   border:0;
 }
+
+.footer{
+  margin-top:25px;
+  font-size:13px;
+  opacity:.65;
+}
 </style>
 </head>
 
@@ -54,17 +101,30 @@ h1{
 
 <div class="radio">
 
-<h1>🎵 Zubeen Garg Radio</h1>
+  <div class="logo">🎵 Zubeen Garg Radio</div>
 
-<div class="live">🔴 LIVE RADIO</div>
+  <div class="subtitle">ASSAMESE MUSIC • 24/7 RADIO</div>
 
-<div class="player">
-<iframe
-src="https://www.youtube.com/embed/videoseries?list=PLfGOIvl9F0pw&loop=1"
-allow="autoplay; encrypted-media"
-allowfullscreen>
-</iframe>
-</div>
+  <div class="live">🔴 LIVE RADIO</div>
+
+  <div class="card">
+
+    <div class="now">🎧 Now Playing</div>
+
+    <div class="player">
+      <iframe
+        src="https://www.youtube.com/embed/videoseries?list=PLfGOIvl9F0pw&autoplay=1&loop=1"
+        title="Zubeen Garg Radio"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © Zubeen Garg Radio
+  </div>
 
 </div>
 
